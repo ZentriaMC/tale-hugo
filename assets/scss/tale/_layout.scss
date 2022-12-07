@@ -1,5 +1,5 @@
 * {
-    @include transition($color-transition);
+    //@include transition($color-transition);
 }
 
 .container {
@@ -21,17 +21,6 @@ footer,
   width: 80%;
 }
 
-#darkModeToggle {
-    float: right;
-    position: sticky;
-    top: 2rem;
-    margin-right: 2rem;
-    margin-top: 2rem;
-    font-size: 2rem;
-
-    cursor: pointer;
-}
-
 .nav {
   box-shadow: 0 2px 2px -2px var(--shadow-color);
   overflow: auto;
@@ -43,7 +32,7 @@ footer,
   }
 
   &-title {
-    @include transition($color-transition, opacity .2s ease-out);
+    //@include transition($color-transition, opacity .2s ease-out);
     color: var(--default-color);
     display: inline-block;
     margin: 0;
@@ -63,7 +52,7 @@ footer,
   }
 
   li {
-    @include transition($color-transition, opacity .2s ease-out);
+    //@include transition($color-transition, opacity .2s ease-out);
     color: var(--default-color);
     display: inline-block;
     opacity: .6;

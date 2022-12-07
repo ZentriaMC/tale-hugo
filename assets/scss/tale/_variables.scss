@@ -11,7 +11,7 @@ $color-transition:
 
 // Make the default be dark mode. That way, the more complicated case is the
 // default and thus bugs are discovered earlier.
-:root.light {
+:root:not(.dark) {
     --default-color: #555;
     --background-color: #fff;
     --default-shade: #353535;
@@ -27,7 +27,7 @@ $color-transition:
     --code-filter: ;
 }
 
-:root:not(.light) {
+:root.dark {
     --default-color: #888;
     --background-color: #000;
     --default-shade: #989898;
