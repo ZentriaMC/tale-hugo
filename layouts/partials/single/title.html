@@ -1,2 +1,4 @@
 <h1 class="post-title">{{ .Title }}</h1>
+<div class="post-read-time">🕒 {{ math.Round (div (countwords .Content) 220.0) }} {{ i18n "minutes" }}</div>
+<br>
 <div class="post-line"></div>
